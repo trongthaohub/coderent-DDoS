@@ -1,90 +1,81 @@
-# ⚡ coderent-DDoS: HardStresser.org API Edition ⚡
+# ⚡ coderent-Resilience: HardStresser.org API Edition ⚡
 
 [ **English** | [**Tiếng Việt**](#tiếng-viet) ]
 
-**coderent-DDoS** is a powerful, high-performance DDoS control tool rebuilt to integrate seamlessly with the **HardStresser.org API**. It features a modern, high-impact terminal interface inspired by the vibrant "China Tech UI" aesthetic.
+**coderent-Resilience** is a professional network performance and stress-testing tool. It is designed to help system administrators and security researchers evaluate server stability by simulating high-traffic scenarios via the **HardStresser.org API**. Featuring a modern terminal interface inspired by the "China Tech UI" aesthetic.
 
 ---
 
 ## 🚀 Key Features (English)
-*   **💎 HardStresser API**: Fire attacks directly through multiple HardStresser accounts.
-*   **📂 Account Management**: Auto-save credentials and manage multiple active sessions.
-*   **⏳ Smart Cooldown**: Real-time tracking of account status (Ready/Busy).
-*   **� Multi-Device Support**: Run smoothly on PC (Windows/Linux) and Android (Termux).
+*   **💎 API Integration**: Simulate traffic through multiple HardStresser accounts simultaneously.
+*   **📂 Session Management**: Auto-load credentials and manage active testing sessions.
+*   **⏳ Smart Cooldown**: Automated status tracking (Ready/Busy) to optimize testing cycles.
+*   **📱 Multi-Platform**: Optimized for Windows, Linux, and Android (Termux).
 
-## 🛰️ Installation & Multi-Device Setup
+## 📘 HardStresser Setup & Integration
+1. **Sign Up**: Create an account at [HardStresser.org](https://hardstresser.org).
+2. **Add Accounts**:
+   - **Automatic**: Create a file named `accounts.txt` in the root folder. Add accounts as `username:password` (one per line).
+   - **Manual**: Enter credentials interactively when prompted after running the tool.
+3. **Optimization**: For free tier accounts, we recommend a **60s** duration per test for maximum API stability.
 
-### 💻 For Windows/Linux (PC & VPS)
-1. **Install Python 3.8+**
-2. **Clone & Install**:
-   ```bash
-   git clone https://github.com/trongthaohub/coderent-DDoS.git
-   cd coderent-DDoS
-   pip install requests colorama cloudscraper undetected-chromedriver httpx urllib3
-   ```
-3. **Run**: `python main.py`
+## 🛰️ Installation & Setup
 
-### 📱 For Android (Termux)
-1. **Update & Setup**:
-   ```bash
-   pkg update && pkg upgrade
-   pkg install python git
-   ```
-2. **Clone & Install**:
-   ```bash
-   git clone https://github.com/trongthaohub/coderent-DDoS.git
-   cd coderent-DDoS
-   pip install requests colorama cloudscraper httpx urllib3
-   ```
-3. **Run**: `python main.py`
+### 💻 Windows/Linux (PC & VPS)
+```bash
+git clone https://github.com/trongthaohub/coderent-DDoS.git
+cd coderent-DDoS
+pip install requests colorama cloudscraper undetected-chromedriver httpx urllib3
+python main.py
+```
+
+### 📱 Android (Termux)
+```bash
+pkg update && pkg upgrade
+pkg install python git
+git clone https://github.com/trongthaohub/coderent-DDoS.git
+cd coderent-DDoS
+pip install requests colorama cloudscraper httpx urllib3
+python main.py
+```
 
 ---
 
 <a name="tiếng-viet"></a>
-# ⚡ coderent-DDoS: Phiên bản API HardStresser.org ⚡
+# ⚡ coderent-Resilience: Phiên bản API HardStresser.org ⚡
 
-**coderent-DDoS** là công cụ điều khiển DDoS hiệu suất cao, được tối ưu hóa hoàn toàn để tích hợp với **API HardStresser.org**. Giao diện Terminal hiện đại, lấy cảm hứng từ phong cách "China Tech UI" rực rỡ và mạnh mẽ.
+**coderent-Resilience** là công cụ kiểm thử hiệu năng và độ ổn định hạ tầng mạng chuyên nghiệp. Được thiết kế dành cho các quản trị viên hệ thống để đo lường giới hạn chịu tải của máy chủ thông qua **API HardStresser.org**.
 
 ## 🚀 Tính năng nổi bật (Tiếng Việt)
-*   **💎 Tích hợp API HardStresser**: Tấn công trực tiếp thông qua một hoặc nhiều tài khoản HardStresser cùng lúc.
-*   **📂 Quản lý tài khoản**: Tự động lưu thông tin đăng nhập và quản lý phiên làm việc linh hoạt.
-*   **⏳ Hệ thống Cooldown thông minh**: Tự động theo dõi trạng thái tài khoản (Sẵn sàng/Đang bận) để tối ưu hóa đợt tấn công.
-*   **📱 Hỗ trợ đa thiết bị**: Chạy mượt mà trên PC (Windows/Linux) và Android (Termux).
+*   **💎 Tích hợp API**: Kiểm thử hiệu năng thông qua một hoặc nhiều tài khoản HardStresser cùng lúc.
+*   **📂 Quản lý phiên**: Tự động lưu và quản lý thông tin đăng nhập linh hoạt.
+*   **⏳ Cooldown thông minh**: Theo dõi trạng thái tài khoản tự động để tối ưu hóa quá trình kiểm thử.
+*   **📱 Đa nền tảng**: Chạy mượt mà trên Windows, Linux và Android (Termux).
 
-## �️ Hướng dẫn cài đặt trên đa thiết bị
+## 📘 Hướng dẫn thiết lập & Tích hợp HardStresser
+1. **Đăng ký**: Truy cập [HardStresser.org](https://hardstresser.org) để tạo tài khoản.
+2. **Thêm tài khoản**:
+   - **Tự động**: Tạo file `accounts.txt` trong thư mục gốc. Nhập định dạng `user:pass` (mỗi dòng 1 acc).
+   - **Thủ công**: Nhập trực tiếp khi tool yêu cầu lúc bắt đầu khởi chạy.
+3. **Lưu ý**: Khuyến khích đặt thời gian test là **60s** để đạt độ ổn định cao nhất cho tài khoản API.
 
-### 💻 Đối với Máy tính (Windows/Linux & VPS)
-1. **Cài đặt Python 3.8 trở lên**.
-2. **Cài đặt bộ công cụ**:
-   ```bash
-   git clone https://github.com/trongthaohub/coderent-DDoS.git
-   cd coderent-DDoS
-   pip install requests colorama cloudscraper undetected-chromedriver httpx urllib3
-   ```
-3. **Khởi chạy**: `python main.py`
-
-### 📱 Đối với Điện thoại (Termux - Android)
-1. **Cập nhật hệ thống**:
-   ```bash
-   pkg update && pkg upgrade
-   pkg install python git
-   ```
-2. **Cài đặt bộ công cụ**:
-   ```bash
-   git clone https://github.com/trongthaohub/coderent-DDoS.git
-   cd coderent-DDoS
-   pip install requests colorama cloudscraper httpx urllib3
-   ```
-3. **Khởi chạy**: `python main.py`
+## 📋 Hướng dẫn cài đặt
+### 💻 Máy tính (Windows/Linux) & 📱 Android (Termux)
+*(Vui lòng tham khảo các lệnh cài đặt ở phần tiếng Anh bên trên)*
 
 ---
 
-## 📋 Available Methods / Các phương thức hỗ trợ
-| Layer 7 (HTTP/HTTPS) | Layer 4 (Network) |
+## 🛠 Supported Methods / Phương thức hỗ trợ
+| Layer 7 (Application) | Layer 4 (Network) |
 | :--- | :--- |
 | `CLOUDFLARE`, `RAW` | `UDP`, `TCP`, `DNS` |
 | `HTTP`, `HTTPS`, `TLS` | `LDAP`, `NTP`, `STUN` |
 
 ---
 
+⚖️ **Disclaimer / Miễn trừ trách nhiệm:**
+This tool is for educational and authorized stress-testing purposes only. The developers are not responsible for any misuse.
+Công cụ này được cung cấp cho mục đích giáo dục và kiểm thử hạ tầng được cấp phép. Chúng tôi không chịu trách nhiệm cho các hành vi sử dụng trái phép.
+
 **Developed with ❤️ by the coderent Team.**
+
